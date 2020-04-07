@@ -18,3 +18,9 @@ to add spring security in rest we need to do some steps
 			<artifactId>jjwt</artifactId>
 			<version>0.9.0</version>
 		</dependency>
+
+# encrypt password:
+there are many way to encrypt password. here i am using BCryptPasswordEncoder class of spring security. it contains encode(String password) which is used to encrypt password. 
+String password = "test";
+//create object of bCryptPasswordEncoder.
+bCryptPasswordEncoder.encode(password);
